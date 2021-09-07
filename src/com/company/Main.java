@@ -9,12 +9,12 @@ public class Main {
         System.out.println("Put in Seconds: ");
 
         Scanner in = new Scanner(System.in);
-        int seconds = in.nextInt();
-        int sec = seconds % 60;
-        int hour = seconds / 60;
-        int min = hour % 60;
+        int tid = in.nextInt();
+        int hour = tid /3600;
+        int min = (tid % 3600 / 60);
+        int sec = (tid % 3600 % 60);
 
-        hour = hour / 60;
+
 
         System.out.println(hour +" hour, "+ min + " minutes, "+ sec + " seconds.");
 
